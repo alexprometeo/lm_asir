@@ -1,0 +1,44 @@
+/* * {
+    padding: 0%;
+    margin: 0%;
+} */
+
+
+/*
+    La etiqueta p tiene que tener color "skyblue"
+    la etiqueta h1 tiene que tener color  "white"
+    la etiqueta li tiene que tener color "whitesmoke"
+    la etiqueta body tiene que tener color de fondo "rgb(52, 52, 52)"
+*/
+
+
+body > span {
+    background-color: rgb(86, 127, 178);
+}
+
+h1#cabeceraPrincipal {
+    font-size: 48px;
+    color: brown;
+}
+
+.texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: rgb(210, 66, 193);
+}
+
+/* p.texto {
+    color: black;
+} */
+
+p.texto {
+    color: white!important;
+}
+
+p:first-of-type {
+    border: solid tomato 10px;
+}
+
+.navigation {
+    list-style: circle;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- vscode-icons -> ctrl + ç -->
+    <head>
+        <title>Lenguaje de Marcas ASIR - Prometeo</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <script src="variables.js"></script> -->
+    </head>
+    <body>
+        
+
+        <h1 id="cabeceraPrincipal">Cabecera</h1>
+        <p class="texto">Mi primer parráfo</p>
+        <p class="texto">Mi 2do parráfo <span>otro span</span></p>  
+        <span class="texto" style="font-size: 128px;">textoooo</span>
+
+        
+        <ul class="navigation">
+            <li>Home</li>
+            <li>About</li>
+            <li>Legal</li>
+        </ul>
+        
+
+        <nav>
+            <ol>
+                <li>primero</li>
+                <li>2do</li>
+                <li>3ero</li>
+            </ol>
+        </nav>
+        
+        <!-- Para ejecutar js directamente en el HTML -->
+        <script>
+            let mainHeader = document.getElementById("cabeceraPrincipal");
+            console.log("Elemento cabecera: ", mainHeader);
+        </script>
+    </body>
+</html>
