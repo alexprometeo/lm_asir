@@ -60,16 +60,25 @@ etiquetaUL[0].appendChild(nuevoLike);
 
 let nuevoElemento = "<h1>GARFIELD!!!</h1>";
 
-//Antes de acabar el elemento, añade el h1 | lo añade como hijo
+// Antes de acabar el elemento, añade el h1 
+// lo añade como hijo
 contenidoPrincipal.insertAdjacentHTML("beforeend", nuevoElemento);
 
-//Antes de empezar la estructura del elemento, añade el h1 | lo añade como hijo
+// Antes de empezar la estructura del elemento, añade el h1 
+// lo añade como hijo
 contenidoPrincipal.insertAdjacentHTML("afterbegin", nuevoElemento);
 
-//Antes de la etiqueta contenidoPrincipal | lo añade como elemento hermano
+// Antes de la etiqueta contenidoPrincipal 
+// lo añade como elemento hermano
 contenidoPrincipal.insertAdjacentHTML("beforebegin", nuevoElemento);
 
-//Despues de la etiqueta contenidoPrincipal | lo añade como elemento hermano
+// Despues de la etiqueta contenidoPrincipal 
+// lo añade como elemento hermano
 contenidoPrincipal.insertAdjacentHTML("afterend", nuevoElemento);
+
+let nuevaImagen = "<img src='http://cdck-file-uploads-global.s3.dualstack.us-west-2.amazonaws.com/freecodecamp/original/3X/6/1/61a3499c5abb165be990aa0c1abd23342e60c663.jpg'/>";
+console.log("nueva imagen: ", nuevaImagen);
+
+contenidoPrincipal.insertAdjacentHTML("afterend", nuevaImagen);
 
 
