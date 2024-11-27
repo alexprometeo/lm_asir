@@ -1,0 +1,13 @@
+#contenidoPrincipal {
+    margin: 0;
+    padding: 0;
+    background-color:bisque;
+  }
+  .listaTareas {
+    list-style: none;
+  }
+
+  .tarea {
+    text-align: center;
+    color: black;
+  }
