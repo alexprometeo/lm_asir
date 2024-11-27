@@ -1,7 +1,7 @@
-let elemento = document.getElementById("titulo");
+let elementoConIdentificador = document.getElementById("titulo");
 
-console.log("elemento titulo: ", elemento);
+console.log("elemento titulo: ", elementoConIdentificador);
 
-elemento.innerHTML = "Modificado!";
+elementoConIdentificador.innerHTML = "Modificado!";
 
 document.getElementById("titulo").innerHTML = "Modificado 2!";
