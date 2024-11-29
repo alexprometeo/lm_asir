@@ -1,0 +1,34 @@
+/* Selector de etiqueta body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond!important;
+    /* 
+    important se utiliza para imponer el estilo donde se utiliza. 
+    Si tiene important va a prevalecer esa regla a las demás.
+    */
+}
+
+/* Selector de atributo identificador */
+#tituloPrincipal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+
+/* Selector de atributo identificador */
+#listaElementos {
+    list-style: none;
+}
+
+/* Selector de atributo clase */
+.elemento {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: blueviolet;
+}
+
+/* ">" significa elemento hijo directo de la etiqueta que lo precede */
+body>#listaElementos>.elemento {
+    cursor: pointer;
+}
