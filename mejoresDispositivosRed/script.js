@@ -21,6 +21,6 @@ function añadirEmoji() {
 
     // Añadimos el emoticono "🛠" dentro del nuevo elemento    
     
-    // Añadimos el nuevo elemento recien creado al final del 
+    // Añadimos el nuevo elemento recien creado al final del último elemento de la lista.
 
 }
