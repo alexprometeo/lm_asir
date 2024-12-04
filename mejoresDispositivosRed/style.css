@@ -1,0 +1,60 @@
+/* 
+Están todos los selectores en lenguaje natural, utiliza nomenclatura de CSS para seleccionar cada elemento correctamente.
+
+OJO: Utiliza el selector adecuado, si un enunciado pide algo mas en concreto, por ejemplo, el elemento header dentro del elemento body, 
+el selector correcto seria:
+    body > header { ... } 
+    o
+    body header { ... } 
+
+Revisa también todas las reglas de estilos del documento por si hay alguna errónea
+*/
+
+
+
+elemento con etiqueta body {
+    /*Cambia la fuente general del documento a una que te guste más*/    
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+elemento con etiqueta header {
+    /*Color de fondo oscuro*/    
+    /*Color de texto blanco*/
+    text-align: center;
+    padding: 20px;
+}
+
+elemento con el identificador lista dentro del elemento main {
+    list-style-type: none;
+    /*Eliminar el padding*/
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+elemento con la clase disp {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10 px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*Tamaño de fuente de 18 píxeles*/
+    /*Centrar el texto*/
+}
+
+elemento button dentro del elemento main {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* Quitar el borde */
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    /* Añadir un color de fondo que destaque ligeramente */
+}
