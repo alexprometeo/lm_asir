@@ -12,43 +12,50 @@ Revisa también todas las reglas de estilos del documento por si hay alguna err�
 
 
 
-elemento con etiqueta body {
+body {
     /*Cambia la fuente general del documento a una que te guste más*/    
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-elemento con etiqueta header {
+header {
     /*Color de fondo oscuro*/    
     /*Color de texto blanco*/
+    background-color: #404040;
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
 }
 
-elemento con el identificador lista dentro del elemento main {
+main #lista  {
     list-style-type: none;
     /*Eliminar el padding*/
+    padding: 0;
     max-width: 650px;
     margin: 20px auto;
 }
 
-elemento con la clase disp {
+.disp {
     background-color: white;
     margin: 10px 0;
-    padding: 10 px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
     /*Tamaño de fuente de 18 píxeles*/
     /*Centrar el texto*/
 }
 
-elemento button dentro del elemento main {
+main > button  {
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
     font-size: 16px;
     /* Quitar el borde */
+    border: none;
     border-radius: 5px;
     background-color: #007bff;
     color: white;
@@ -57,4 +64,5 @@ elemento button dentro del elemento main {
 
 button:hover {
     /* Añadir un color de fondo que destaque ligeramente */
+    background-color: #8741ff;
 }
