@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Introducción a los Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Input type text</h1>
+    </header>
+    <main>
+        <form method="post" action="https://www.google.es/">
+            <!-- Podemos meter el input dentro del label y el funcionamiento es igual que si lo relacionamos mediante los ids y for -->
+            <!-- <label>Nombre: <input type="text" placeholder="Introduce tu nombre"/></label> -->            
+
+            <!-- El placeholder sirve como pista para indicarle al usuario que tipo de información introducir -->
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="Introduce tu nombre"/>
+
+            <label for="apellido">Apellidos: </label>
+            <input id="apellido" type="text" maxlength="5" required />
+
+            <label for="email">Email: </label>
+            <input id="email" type="email" />
+
+            <!-- En los type number podemos controlar el valor mínimo, máximo y el valor del aumento con step -->
+            <label for="edad">Edad: </label>
+            <input id="edad" type="number" step="10" min="16" max="120" required />
+
+            <label for="fechaNacimiento">Fecha Nacimiento:</label>
+            <input id="fechaNacimiento" type="date" />
+
+
+            <!-- Fieldset agrupa varios input relacionados entre si y podemos añadir más info gracias a la etiqueta legend -->
+            <fieldset>  
+                <legend>Género:</legend>   
+           
+                <label for="masculino">Masculino</label>
+                <input id="masculino" type="radio" name="genero" value="masculino">
+    
+                <label for="feminino">Feminino</label>
+                <input id="feminino" type="radio" name="genero" value="feminino">   
+    
+                <label for="otro">Otro</label>
+                <input id="otro" type="radio" name="genero" value="otro">               
+            </fieldset>
+
+            <label>Aceptas los términos y condiciones <input id="terminos" type="checkbox" name="terminos" value="1"></label>
+
+            <input type="submit" value="Enviar" />
+            <!-- Podemos utilizar para enviar la información del formulario la etiqueta input type submit o la etiqueta button type submit -->
+            <!-- <button type="submit" >Enviar</button> -->
+        </form>
+    </main>
+    <footer>
+        <h3>Prometeo ASIR 2025</h3>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-color: darkslategray;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    margin: auto;
+    max-width: 35%;    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+input {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+    color: #3e4f57;
+}
+
+/* Selector por la etiqueta input con un atributo type igual a submit */
+input[type="submit"]{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+fieldset {
+    margin: 5px 0px 10px;
+}
+
+header, footer{
+    text-align: center;
+}
