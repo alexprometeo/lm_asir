@@ -11,26 +11,28 @@
         <h1>Input type text</h1>
     </header>
     <main>
-        <form method="post" action="https://www.google.es/">
+        <form method="post" action="test.html">
             <!-- Podemos meter el input dentro del label y el funcionamiento es igual que si lo relacionamos mediante los ids y for -->
             <!-- <label>Nombre: <input type="text" placeholder="Introduce tu nombre"/></label> -->            
+             <fieldset class="datosPersonales">
+                    <legend>Datos personales</legend>
+                    <!-- El placeholder sirve como pista para indicarle al usuario que tipo de información introducir -->
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Introduce tu nombre" required/>
 
-            <!-- El placeholder sirve como pista para indicarle al usuario que tipo de información introducir -->
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" type="text" placeholder="Introduce tu nombre"/>
+                    <label for="apellido">Apellidos: </label>
+                    <input id="apellido" type="text" maxlength="5" />
 
-            <label for="apellido">Apellidos: </label>
-            <input id="apellido" type="text" maxlength="5" required />
+                    <label for="email">Email: </label>
+                    <input id="email" name="email" type="email" />
 
-            <label for="email">Email: </label>
-            <input id="email" type="email" />
+                    <!-- En los type number podemos controlar el valor mínimo, máximo y el valor del aumento con step -->
+                    <label for="edad">Edad: </label>
+                    <input id="edad" type="number" step="10" min="16" max="120" required />
 
-            <!-- En los type number podemos controlar el valor mínimo, máximo y el valor del aumento con step -->
-            <label for="edad">Edad: </label>
-            <input id="edad" type="number" step="10" min="16" max="120" required />
-
-            <label for="fechaNacimiento">Fecha Nacimiento:</label>
-            <input id="fechaNacimiento" type="date" />
+                    <label for="fechaNacimiento">Fecha Nacimiento:</label>
+                    <input id="fechaNacimiento" type="date" />
+             </fieldset>
 
 
             <!-- Fieldset agrupa varios input relacionados entre si y podemos añadir más info gracias a la etiqueta legend -->
@@ -48,6 +50,18 @@
             </fieldset>
 
             <label>Aceptas los términos y condiciones <input id="terminos" type="checkbox" name="terminos" value="1"></label>
+
+            <!-- <label for="comentarios">Comentarios: </label> -->
+            <textarea id="comentarios" cols="10" rows="20" placeholder="Introduce aquí tus comentarios"></textarea>
+
+            <label for="pais">Selecciona un país: </label>
+            <select id="pais" name="pais">
+                <option value="">Selecciona un País</option>
+                <option value="sri_lanka">Sri Lanka</option>
+                <option value="mozam">Mozambique</option>
+                <option value="ro">Rumanía</option>
+                <option value="turkm">Turkemenistán</option>
+            </select>
 
             <input type="submit" value="Enviar" />
             <!-- Podemos utilizar para enviar la información del formulario la etiqueta input type submit o la etiqueta button type submit -->

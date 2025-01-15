@@ -14,11 +14,15 @@ form {
     justify-content: center;
 }
 
-input {
+input, textarea, select {
     margin-top: 5px;
     padding: 5px;
     background-color: antiquewhite;
     color: #3e4f57;
+}
+
+textarea {
+    resize: none;
 }
 
 /* Selector por la etiqueta input con un atributo type igual a submit */
@@ -34,4 +38,9 @@ fieldset {
 
 header, footer{
     text-align: center;
+}
+
+.datosPersonales {
+    display: flex;
+    flex-direction: column;
 }
