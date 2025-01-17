@@ -1,6 +1,7 @@
 body{
     box-sizing: content-box;
-    background-image: url(https://okdiario.com/img/2023/11/26/estopa-en-concierto-foto_-ep.jpg);    
+    background-image: url(https://okdiario.com/img/2023/11/26/estopa-en-concierto-foto_-ep.jpg);
+    background-size: cover;
 }
 
 form {
