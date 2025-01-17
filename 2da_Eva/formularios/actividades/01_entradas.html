@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estopa</title>
+</head>
+<body>
+        <header>
+            <h1>Entradas Estopa</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Datos del comprador</legend>
+
+                    <label for="name">Nombre: </label>
+                    <input id="name" type="text" maxlength="35" required>
+
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Entradas</legend>
+
+                    <label for="date">Fecha del concierto: </label>
+                    <input id="date" type="date" min="2025-01-01" max="2025-06-30">
+
+                    <label for="tickets">Número de entradas (max 8)</label>
+                    <input id="tickets" type="number" min="1" max="8" required>
+
+                    <label for="ticketType">Tipo de entrada :</label>
+                    <select id="ticketType">
+                        <option value="normal">Normal</option>
+                        <option value="premium">Premium</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer>
+            <h3>Prometeo ASIR 2025</h3>
+        </footer>
+</body>
+</html>

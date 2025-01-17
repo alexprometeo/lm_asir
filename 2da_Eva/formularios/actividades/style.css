@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+    background-color: #607D8B;
+    box-shadow: 1px 1px 1px;
+    border-radius: 5px;
+    height: 50vh;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+header, footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+input, select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
