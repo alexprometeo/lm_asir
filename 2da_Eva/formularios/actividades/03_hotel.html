@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <!-- Crea un formulario que permita reservar una habitación:
+      - Nombre del huésped;
+      - Fecha de entrada y salida;
+      - Selección de habitación (Individual, Doble, Suite);
+      - Número de huéspedes;
+      - Check para aceptar los términos y condiciones del hotel;
+      - Boton para enviar el formulario;
+    -->
+    <form method="get" id="reservaHotel">
+        <label for="nombreHuespues">Nombre del huepued:</label>
+        <!-- <input id="nombreHuespues" type="text" placeholder="Nombre del huésped"> -->
+        <input id="nombreHuespues" type="text" name="nombre" required>
+
+        <label for="checkin">Fecha de entrada: </label>
+        <input id="checkin" type="date" name="checkin" min="2025-01-22" max="2025-12-31" required>
+
+        <label for="checkout">Fecha de salida: </label>
+        <input id="checkout" type="date" name="checkout" min="2025-01-22" max="2025-12-31"> 
+
+        <!-- <label for="room">Selecciona el tipo de habitación</label> -->
+        <select id="room" name="room">
+            <option value="">Selecciona el tipo de habitación</option>
+            <!-- <option value="single" selected>Individual</option> -->
+            <option value="single">Individual</option>
+            <option value="double">Doble</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label for="numHuespedes">Número de huéspedes: </label>
+        <input id="numHuespedes" name="numHuespedes" type="number" min="1" max="3">
+
+        <label for="terminos"><input id="terminos" type="checkbox" name="terminos" value="ok" required> Acepto los términos y condiciones.</label>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
