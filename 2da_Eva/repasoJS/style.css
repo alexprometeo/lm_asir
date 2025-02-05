@@ -18,6 +18,7 @@ body {
 /* Selector de atributo identificador */
 #listaElementos {
     list-style: none;
+    background-color: blueviolet;
 }
 
 /* Selector de atributo clase */
