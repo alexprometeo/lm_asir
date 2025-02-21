@@ -3,7 +3,8 @@
     elemento padre configuracion_basedatos
     dentro un elemento base_datos con los siguientes elementos:
         - user
-        - password
+         esta etiqueta deberá estar escapada para no ser interpretada:
+            - password
         - port
         - max_connections
         - access_mode
