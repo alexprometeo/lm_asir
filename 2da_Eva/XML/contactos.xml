@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactos>
+    <persona genero="M">
+        <nombre>Pepe</nombre>
+        <apellidos>Ruiz</apellidos>
+        <correo>pepe@mail.com</correo>
+        <telefono>555123654</telefono>
+        <direccion>C/Falsa 123</direccion>
+    </persona>
+
+    <persona genero="O">
+        <nombre>Ana</nombre>
+        <!-- CDATA se utilizar para escapar cierta información que no queremos que los programas lectores de XML -->
+        <apellidos><![CDATA[Fernandez]]></apellidos>
+        <correo>ana@mail.com</correo>
+        <telefono>987654321</telefono>
+        <direccion>C/Piruleta 32</direccion>
+    </persona>    
+</contactos>
+
+ <!-- 
+    XML con el elemento padre contactos;
+        dentro de contactos tendrá elementos persona
+        (deberá tener el atributo género)
+        con los siguientes elementos:
+            - nombre 
+            - apellidos
+            - correo
+            - teléfono
+            - dirección
+ -->

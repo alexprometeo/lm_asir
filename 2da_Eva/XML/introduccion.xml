@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- La primera etiqueta debe ser el "prologo" donde indicamos la versión y la codificación-->
+<servidor nombre="pruebas">
+    <url>8.8.8.8</url>    
+    <firewall>1.1.1.1</firewall>    
+    <puerto>3000</puerto>
+    <logs>/var/logs</logs>
+</servidor>
+<!-- XML tiene en cuenta las mayúsculas a diferencia del HTML-->
+<!-- <Servidor>
+</Servidor> -->
