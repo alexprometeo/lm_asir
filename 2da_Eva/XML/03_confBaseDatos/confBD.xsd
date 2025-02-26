@@ -2,7 +2,8 @@
     <xs:element name="configuracion_basedatos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="base_datos">
+                <!-- maxOccurs unbounded indica que podemos tener un número infinito de elementos base_datos -->
+                <xs:element name="base_datos" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="user" type="xs:string"></xs:element>
@@ -30,6 +31,8 @@
                                 </xs:simpleType>
                             </xs:element>
                         </xs:sequence>
+                        <!-- Los atributos deben ir dentro del complexType del elemento al que pertenezcan, despues del cierre de la etiqueta sequence -->
+                        <xs:attribute name="host" type="xs:string"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
