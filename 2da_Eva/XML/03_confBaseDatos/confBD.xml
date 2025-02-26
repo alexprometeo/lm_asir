@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- XML con su DOCTYPE que contenga lo siguiente:
     elemento padre configuracion_basedatos
     dentro un elemento base_datos con los siguientes elementos:
@@ -9,3 +9,13 @@
         - max_connections
         - access_mode
 -->
+<?xml-model href="confBD.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<configuracion_basedatos>
+    <base_datos>
+        <user>admin1</user>
+        <password><![CDATA[Admin1234]]></password>
+        <port>3000</port>
+        <max_connections>1000</max_connections>
+        <access_mode>remote</access_mode>
+    </base_datos>
+</configuracion_basedatos>
