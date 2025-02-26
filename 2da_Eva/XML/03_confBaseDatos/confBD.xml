@@ -16,6 +16,6 @@
         <password><![CDATA[Admin1234]]></password>
         <port>3000</port>
         <max_connections>1000</max_connections>
-        <access_mode>remote</access_mode>
+        <access_mode>local</access_mode>
     </base_datos>
 </configuracion_basedatos>
