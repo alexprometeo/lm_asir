@@ -9,7 +9,15 @@
                             <xs:element name="password" type="xs:string"></xs:element>
                             <xs:element name="port" type="xs:integer"></xs:element>
                             <xs:element name="max_connections" type="xs:integer"></xs:element>
-                            <xs:element name="access_mode" type="xs:string"></xs:element>
+                            <!-- <xs:element name="access_mode" type="xs:string"> -->
+                            <xs:element name="access_mode">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="local"></xs:enumeration>
+                                        <xs:enumeration value="remote"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
