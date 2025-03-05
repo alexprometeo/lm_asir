@@ -1,0 +1,12 @@
+<!-- Si añadimos el "+" significa que puede contener mas de un elemento -->
+<!ELEMENT contactos (persona+)>
+<!-- Entre paréntesis todos los subelementos del elemento padre -->
+<!ELEMENT persona (nombre, apellidos, correo, telefono, direccion)>
+<!-- A nivel de elemento, indicar que acepte cualquier tipo de texto con (#PCDATA) -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!-- Los atributos van en !ATTLIST  -->
+<!ATTLIST persona genero CDATA #REQUIRED>
