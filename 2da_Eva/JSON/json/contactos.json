@@ -1,0 +1,20 @@
+{
+    "contactos": [
+        {
+            "nombre":"John",
+            "apellidos":"Doe",
+            "genero": "M",
+            "correo": "john.doe@mail.com",
+            "telefono": "555888777",
+            "direccion": "123 Pelham"
+        },
+        {
+            "nombre":"Jane",
+            "apellidos":"Doe",
+            "genero": "F",
+            "correo": "jane.doe@mail.com",
+            "telefono": "555777888",
+            "direccion": "123 Pelham"
+        }  
+    ]
+}
