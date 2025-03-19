@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Crea un XML con la info de un sitio web:
+     - Nombre del sitio
+     - Dominio
+     - Tecnologias utilizadas (con subelementos tecnologia con valores como HTML, JS, CSS)
+     - Secciones del sitio (con subelementos seccion con valores como Inicio, Blog, Contacto)
+     - Configuracion servidor (con subelementos puerto y base datos)
+-->
+
+<configuracion_web>
+    <nombre>CucuSoft</nombre>
+    <dominio>www.cucusoft.ro</dominio>
+    <tecnologias>
+        <tecnologia>HTML</tecnologia>
+        <tecnologia>CSS</tecnologia>
+        <tecnologia>JS</tecnologia>
+    </tecnologias>
+    <secciones>
+        <seccion>Inicio</seccion>
+        <seccion>Blog</seccion>
+        <seccion>Contacto</seccion>
+    </secciones>
+    <configuracion_server>
+        <puerto>8080</puerto>
+        <base_datos>PostgreSQL</base_datos>
+    </configuracion_server>
+</configuracion_web>
