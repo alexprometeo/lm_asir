@@ -8,6 +8,21 @@
      - Configuracion servidor (con subelementos puerto y base datos)
 -->
 
+<!-- Document type definition (DTD) en el propio XML -->
+<!-- <!DOCTYPE configuracion_web [
+    <!ELEMENT configuracion_web (nombre, dominio, tecnologias, secciones, configuracion_server)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT dominio (#PCDATA)>
+    <!ELEMENT tecnologias (tecnologia+)>
+    <!ELEMENT tecnologia (#PCDATA)>
+    <!ELEMENT secciones (seccion+)>
+    <!ELEMENT seccion (#PCDATA)>
+    <!ELEMENT configuracion_server (puerto, base_datos)>
+    <!ELEMENT puerto (#PCDATA)>
+    <!ELEMENT base_datos (#PCDATA)>
+]> -->
+
+<!DOCTYPE configuracion_web SYSTEM "configuracion_web.dtd">
 <configuracion_web>
     <nombre>CucuSoft</nombre>
     <dominio>www.cucusoft.ro</dominio>
