@@ -1,0 +1,32 @@
+<qq:schema xmlns:qq="http://www.w3.org/2001/XMLSchema">
+    <qq:element name="configuracion_web">
+        <qq:complexType>
+            <qq:sequence>
+                <qq:element name="nombre" type="qq:string"></qq:element>
+                <qq:element name="dominio" type="qq:string"></qq:element>
+                <qq:element name="tecnologias">
+                    <qq:complexType>
+                        <qq:sequence>
+                            <qq:element name="tecnologia" type="qq:string" maxOccurs="unbounded"></qq:element>
+                        </qq:sequence>
+                    </qq:complexType>
+                </qq:element>
+                <qq:element name="secciones">
+                    <qq:complexType>
+                        <qq:sequence>
+                            <qq:element name="seccion" type="qq:string" maxOccurs="unbounded"></qq:element>
+                        </qq:sequence>
+                    </qq:complexType>                
+                </qq:element>
+                <qq:element name="configuracion_server">
+                    <qq:complexType>
+                        <qq:sequence>
+                            <qq:element name="puerto" type="qq:string"></qq:element>
+                            <qq:element name="base_datos" type="qq:string"></qq:element>
+                        </qq:sequence>
+                    </qq:complexType>                
+                </qq:element>
+            </qq:sequence>
+        </qq:complexType>
+    </qq:element>
+</qq:schema>

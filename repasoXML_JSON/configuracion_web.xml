@@ -22,7 +22,15 @@
     <!ELEMENT base_datos (#PCDATA)>
 ]> -->
 
-<!DOCTYPE configuracion_web SYSTEM "configuracion_web.dtd">
+<!-- Enlazar a un fichero externo DTD -->
+<!-- <!DOCTYPE configuracion_web SYSTEM "configuracion_web.dtd"> -->
+
+<!-- Enlazar a un XSD existente  -->
+<!-- <configuracion_web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="configuracion_web.xsd"> -->
+
+<!-- Enlazar a un XSD existente mediante XML model -->
+<?xml-model href="configuracion_web.xsd"?>
 <configuracion_web>
     <nombre>CucuSoft</nombre>
     <dominio>www.cucusoft.ro</dominio>
