@@ -1,0 +1,13 @@
+{
+    "configuracion_web": {
+        "nombre": "CucuSoft",
+        "dominio": "www.cucusoft.ro",
+        "tecnologias": ["HTML", "CSS", "JS"],
+        "secciones": ["Inicio", "Blog", "Contacto"],
+        "configuracion_server": {
+            "puerto": 8080,
+            "base_datos": "PostgreSQL"
+        }
+
+    }
+}
