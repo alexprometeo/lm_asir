@@ -1,0 +1,23 @@
+{
+    "contactos": {
+        "persona": [
+            {
+                "nombre": "Michael",
+                "apellidos": "Caine",
+                "genero": "M",
+                "correo": "michael@caine.com",
+                "telefono": 888999444,
+                "direccion": "Fullham street"
+            },
+            {
+                "nombre": "Frida",
+                "apellidos": "Kahlo",
+                "genero": "F",
+                "correo": "frida@kahlo.com",
+                "telefono": 123654987,
+                "direccion": "C/Mayor, 123"
+            }            
+        ]
+    }
+
+}

@@ -1,0 +1,22 @@
+{
+    "configuracion_basedatos": {
+        "base_datos": [
+            {
+                "host": "127.0.0.1",
+                "user": "admin1",
+                "password": "**********",
+                "port": 3000,
+                "max_connections": 1000,
+                "access_mode": "local"
+            },
+            {
+                "host": "localhost",
+                "user": "admin2",
+                "password": "*********",
+                "port": 3000,
+                "max_connections": 1000,
+                "access_mode": "remote"
+            }            
+        ]
+    }
+}
