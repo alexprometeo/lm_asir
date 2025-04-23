@@ -23,4 +23,19 @@ VALUES (
 		"telefono": "555888777",
 		"direccion": "123 Pelham"
     }' 
-);
+),
+INSERT INTO Clientes (nombre, empresa, ventas, contactos)
+VALUES (
+	'Valve'
+	, 'Valve'
+	, 30
+	, '{
+		"nombre":"Jane",
+		"apellidos":"Doe",
+		"genero": "F",
+		"correo": "jane.doe@mail.com",
+		"telefono": "777888999",
+		"direccion": "321 Pelham"
+    }' 
+)
+;
