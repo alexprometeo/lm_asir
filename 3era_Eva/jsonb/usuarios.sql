@@ -37,3 +37,10 @@ VALUES (
     }' 
 )
 ;
+
+-- Select que muestre el nombre y el idioma de cada usuario
+SELECT nombre, preferencias ->> 'idioma' as idioma
+FROM usuarios
+-- Filtrar por los registros que tengan el valor de las notificaciones en comun
+WHERE preferencias ->> 'notificaciones' = 'true'
+;
