@@ -24,3 +24,14 @@ UPDATE clientes
 SET contactos = jsonb_set(contactos, '{activo}', 'true')
 WHERE contactos ->> 'genero' = 'M'
 ;
+
+
+-- Filtrar los registros, preguntando si tiene una clave específica el campo jsonb
+SELECT id
+, nombre
+, empresa
+, ventas
+, contactos
+FROM public.clientes
+WHERE contactos ? 'activo'
+;
