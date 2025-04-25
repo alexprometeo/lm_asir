@@ -50,3 +50,10 @@ WHERE preferencias ->> 'notificaciones' = 'true'
 UPDATE usuarios
 SET preferencias = jsonb_set(preferencias, '{idioma}', '"es"')
 ;
+
+
+--Actualizar 
+--todos los registros para añadir la clave 'dispositivo' en el campo 'preferencias'
+UPDATE usuarios
+SET preferencias = jsonb_set(preferencias, '{dispositivo}', '"Android"')
+;
