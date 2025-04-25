@@ -44,3 +44,9 @@ FROM usuarios
 -- Filtrar por los registros que tengan el valor de las notificaciones en comun
 WHERE preferencias ->> 'notificaciones' = 'true'
 ;
+
+--Actualizar todos los registros para que todos tengan el valor 'es' 
+--en la clave 'idioma' del campo json 'preferencias'
+UPDATE usuarios
+SET preferencias = jsonb_set(preferencias, '{idioma}', '"es"')
+;
