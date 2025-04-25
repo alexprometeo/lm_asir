@@ -23,7 +23,7 @@ VALUES (
 		"telefono": "555888777",
 		"direccion": "123 Pelham"
     }' 
-),
+);
 INSERT INTO Clientes (nombre, empresa, ventas, contactos)
 VALUES (
 	'Valve'

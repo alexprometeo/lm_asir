@@ -11,5 +11,10 @@ SELECT contactos ->> 'correo' --as Correo /*Si necesitamos pintar varios campos 
 FROM Clientes
 ;
 
-
+-- Where utilizando el operador "@>", a diferencia del operador "->>", solo se puede utilizar en el WHERE
+SELECT *
+FROM Clientes
+--WHERE contactos ->> 'genero' = 'F'
+WHERE contactos @> '{"genero": "F"}'
+;
 
