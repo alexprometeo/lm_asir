@@ -18,3 +18,9 @@ FROM Clientes
 WHERE contactos @> '{"genero": "F"}'
 ;
 
+
+--UPDATE del campo jsonb mediante la funcion jsonb_set, Utilizamos también para el where el operador "->>" que nos permite filtrar por los valores del campo jsonb.
+UPDATE clientes
+SET contactos = jsonb_set(contactos, '{activo}', 'true')
+WHERE contactos ->> 'genero' = 'M'
+;
