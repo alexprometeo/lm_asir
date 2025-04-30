@@ -49,3 +49,9 @@ VALUES
 -- Seleccionar el producto y el color
 SELECT producto, caracteristicas ->> 'color' as color
 from productos;
+
+
+-- Where que filtre un registro de los 3 por el valor de la marca
+SELECT * from productos
+WHERE caracteristicas ->> 'marca' = 'Asus'
+;
