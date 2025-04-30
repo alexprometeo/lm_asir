@@ -55,3 +55,9 @@ from productos;
 SELECT * from productos
 WHERE caracteristicas ->> 'marca' = 'Asus'
 ;
+
+-- UPDATE DONDE, EN LOS REGISTROS QUE TENGAN UN MATERIAL 'LINO' AÑADIR UNA CLAVE CON jsonb_set llamada 'sensible' con valor true
+UPDATE productos
+SET caracteristicas = jsonb_set(caracteristicas, '{sensible}', 'true')
+WHERE caracteristicas ->> 'material' = 'lino'
+;
