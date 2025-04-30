@@ -45,3 +45,7 @@ VALUES
     }'  
 )
 ;
+
+-- Seleccionar el producto y el color
+SELECT producto, caracteristicas ->> 'color' as color
+from productos;
