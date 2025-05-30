@@ -113,9 +113,13 @@ print("------------------------------------------------")
 #  Calculadora: primer número, operación (+, -, /, *) y segundo número
 ###
 
-numero1 = int(input("Introduce un número: "))
-numero2 = int(input("Introduce otro número: "))
-operacion = input("¿Que operación deseas realizar (+, -, /, *)?")
+# numero1 = int(input("Introduce un número: "))
+# numero2 = int(input("Introduce otro número: "))
+# operacion = input("¿Que operación deseas realizar (+, -, /, *)?")
+
+numero1 = 7
+numero2 = 7
+operacion = '*'
 
 resultado = 0
 
@@ -135,3 +139,23 @@ print(f"El resultado de la operación es: {resultado}")
 
 
 print("------------------------------------------------")
+
+# Es mala praxis hacer los imports en mitad del código, lo mejor es hacerlos todos arriba
+import random
+
+###
+#   Número random, declarar variable númerica con input y comprobar 
+#   si ha acertado, es mayor o es menor que el número random.
+###
+
+aleatorio = random.randint(1, 10)
+numero = int(input("Introduce un número: "))
+
+if numero == aleatorio:
+    print("Genial, lo has acertadoo!!! 🎉🎊🎉🎉")
+elif numero < aleatorio:
+    print("Es mayor")
+elif numero > aleatorio:
+    print("Es menor")
+else:
+    print("No has acertado 😔")
