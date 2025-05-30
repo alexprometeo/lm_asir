@@ -149,10 +149,11 @@ import random
 ###
 
 aleatorio = random.randint(1, 10)
-numero = int(input("Introduce un número: "))
+# numero = int(input("Introduce un número: "))
+numero = 7
 
 if numero == aleatorio:
-    print("Genial, lo has acertadoo!!! 🎉🎊🎉🎉")
+    print("Genial, lo has acertadoo!!! 🎉🎉🎉")
 elif numero < aleatorio:
     print("Es mayor")
 elif numero > aleatorio:
