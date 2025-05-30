@@ -80,7 +80,8 @@ print("------------------------------------------------")
 #  si hace frio (menos de 15º), templado (15-25) o calor, más de 30º
 ###
 
-temperatura = int(input("¿Qué temperatura hace hoy? "))
+# temperatura = int(input("¿Qué temperatura hace hoy? "))
+temperatura = 34
 
 # if temperatura < 15:
 #     print("Hace frioo 🥶🥶🥶🥶🥶🥶")
@@ -104,3 +105,33 @@ else:
 # Para que entre en la ejecución del codigo de la condición:
 # AND: se deben cumplir todas las condiciones
 # OR: se debe cumplir una unica condición de las que hay
+
+
+print("------------------------------------------------")
+
+###
+#  Calculadora: primer número, operación (+, -, /, *) y segundo número
+###
+
+numero1 = int(input("Introduce un número: "))
+numero2 = int(input("Introduce otro número: "))
+operacion = input("¿Que operación deseas realizar (+, -, /, *)?")
+
+resultado = 0
+
+if operacion == "+":
+    resultado = numero1 + numero2
+elif operacion == "-":
+    resultado = numero1 - numero2
+elif operacion == '*':
+    resultado = numero1 * numero2
+elif operacion == '/':
+    resultado = numero1 / numero2
+else:
+    print("No entiendo la operación introducida")
+
+
+print(f"El resultado de la operación es: {resultado}")
+
+
+print("------------------------------------------------")
